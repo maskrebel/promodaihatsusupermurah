@@ -1,0 +1,423 @@
+/* logo location */
+.touchy-logo-wrapper { background-color:; }
+.touchy-logo-wrapper { background-color:; }
+.touchy-logo a { color:; }
+.touchy-logo a:hover { color:; }
+.touchy-logo-wrapper {
+
+    text-align:center;
+}
+.touchy-logo-wrapper-bg {
+    background-image:url('');
+    opacity:;
+}
+.touchy-logo-image img { max-height:px; }
+
+/* if logo location hidden*/
+.touchy-wrapper { position:fixed; top:0; }
+.touchy-search-wrapper { position:fixed; top:0; }
+.touchy-by-bonfire-wrapper { position:fixed; top:65px; }
+
+/* text labels */
+.touchy-wrapper .touchy-back-button::before {
+    content:'Kembali';
+    color:;
+}
+.touchy-wrapper .touchy-call-button::before {
+    content:'Telpon Sekarang';
+    color:#ffffff;
+    margin-left:-2px;
+}
+.touchy-wrapper .touchy-email-button::before {
+    content:'Simulasi Kredit';
+    color:#ffffff;
+}
+.touchy-wrapper .touchy-search-button::before {
+    content:'';
+    color:;
+}
+.touchy-wrapper .touchy-menu-button::before {
+    content:'WhatsApp';
+    color:#ffffff;
+}
+
+/* text label hovers (on touch devices only) */
+.touchy-wrapper .touchy-back-button:hover::before,
+.touchy-wrapper .touchy-call-button:hover::before,
+.touchy-wrapper .touchy-email-button:hover::before,
+.touchy-wrapper .touchy-search-button:hover::before,
+.touchy-wrapper .touchy-menu-button:hover::before {
+    color:#fff;
+}
+.touchy-wrapper .touchy-back-button:hover::before { color:; }
+.touchy-wrapper .touchy-call-button:hover::before { color:; }
+.touchy-wrapper .touchy-email-button:hover::before { color:; }
+.touchy-wrapper .touchy-search-button:hover::before { color:; }
+.touchy-wrapper .touchy-menu-button:hover::before { color:; }
+/* text label colors for search and menu button active states */
+.touchy-wrapper .touchy-search-button-active::before { color:; }
+.touchy-wrapper .touchy-menu-button-active::before { color:; }
+
+/* button borders */
+.touchy-wrapper .touchy-back-button,
+.touchy-wrapper .touchy-call-button,
+.touchy-wrapper .touchy-email-button,
+.touchy-wrapper .touchy-search-button,
+.touchy-wrapper .touchy-menu-button {
+    border-width:0;
+}
+
+/* icon positioning if text label entered */
+.touchy-back-text-label-offset > div { margin-top:-7px; }
+.touchy-back-text-label-offset i { position:relative; top:-5px; }
+
+.touchy-call-text-label-offset > div { position:relative; top:-9px; }
+.touchy-call-text-label-offset i { position:relative; top:-5px; }
+
+.touchy-email-text-label-offset > div { margin-top:-9px; }
+.touchy-email-text-label-offset i { position:relative; top:-5px; }
+
+
+.touchy-menu-text-label-offset > div { margin-top:-8px; }
+.touchy-menu-text-label-offset i { position:relative; top:-8px; }
+
+/* custom text label font size */
+.touchy-wrapper .touchy-back-button::before,
+.touchy-wrapper .touchy-call-button::before,
+.touchy-wrapper .touchy-email-button::before,
+.touchy-wrapper .touchy-search-button::before,
+.touchy-wrapper .touchy-menu-button::before {
+    font-size:px;
+}
+
+/* BACK button */
+.touchy-wrapper .touchy-back-button { color:#000000; background-color:; }
+/* CALL button */
+.touchy-wrapper .touchy-call-button { color:#ffffff; background-color:#dd3333; }
+/* EMAIL button */
+.touchy-wrapper .touchy-email-button { color:#ffffff; background-color:#1e73be; }
+/* SEARCH button */
+.touchy-wrapper .touchy-search-button { color:; background-color:; }
+/* when search button active */
+.touchy-search-button-active { color: !important; background-color: !important; }
+.touchy-search-button-active .touchy-default-search-outer {
+    -webkit-box-shadow:0px 0px 0px 2px #fff !important;
+    -moz-box-shadow:0px 0px 0px 2px #fff !important;
+    box-shadow:0px 0px 0px 2px #fff !important;
+}
+.touchy-search-button-active .touchy-default-search-outer:after,
+.touchy-search-button-active .touchy-default-search-inner,
+.touchy-search-button-active .touchy-default-search-inner:before,
+.touchy-search-button-active .touchy-default-search-inner:after { background-color: !important; }
+/* MENU button */
+.touchy-menu-button { color:#ffffff; background-color:#0cb73d; }
+.touchy-default-menu,
+.touchy-default-menu:before,
+.touchy-default-menu:after { background-color:#ffffff; }
+/* when menu button active */
+.touchy-menu-button-active { color:; background-color:#0cb73d; }
+.touchy-menu-button-active .touchy-default-menu,
+.touchy-menu-button-active .touchy-default-menu:before,
+.touchy-menu-button-active .touchy-default-menu:after { background-color:; }
+
+/* show top button hovers on non-touch devices only */
+.touchy-back-button:hover,
+.touchy-call-button:hover,
+.touchy-email-button:hover,
+.touchy-search-button:hover,
+.touchy-menu-button:hover {
+    color:#fff;
+    background-color:#07B1FF;
+}
+.touchy-back-button:hover { color:; background-color:; }
+.touchy-call-button:hover { color:; background-color:#dd3333; }
+.touchy-email-button:hover { color:; background-color:#1e73be; }
+.touchy-search-button:hover { color:; background-color:; }
+.touchy-menu-button:hover { color:; background-color:#0cb73d; }
+
+/* default back button */
+.touchy-back-button:hover .touchy-default-back,
+.touchy-back-button:hover .touchy-default-back:before,
+.touchy-back-button:hover .touchy-default-back:after { background-color:#fff;; }
+
+/* default call icon hovers */
+.touchy-call-button:hover .touchy-default-call-one,
+.touchy-call-button:hover .touchy-default-call-two,
+.touchy-call-button:hover .touchy-default-call-three,
+.touchy-call-button:hover .touchy-default-call-one:before,
+.touchy-call-button:hover .touchy-default-call-two:before,
+.touchy-call-button:hover .touchy-default-call-three:before,
+.touchy-call-button:hover .touchy-default-call-one:after,
+.touchy-call-button:hover .touchy-default-call-two:after,
+.touchy-call-button:hover .touchy-default-call-three:after { background-color:#fff; }
+
+/* default email icon hovers */
+.touchy-email-button:hover .touchy-default-email-outer {
+    -webkit-box-shadow:0px 0px 0px 2px #fff;
+    -moz-box-shadow:0px 0px 0px 2px #fff;
+    box-shadow:0px 0px 0px 2px #fff;
+}
+.touchy-email-button:hover .touchy-default-email-outer:before,
+.touchy-email-button:hover .touchy-default-email-outer:after,
+.touchy-email-button:hover .touchy-default-email-outer .touchy-default-email-inner:before,
+.touchy-email-button:hover .touchy-default-email-outer .touchy-default-email-inner:after { background-color:#fff; }
+
+/* default search icon hovers */
+.touchy-search-button:hover .touchy-default-search-outer {
+    -webkit-box-shadow:0px 0px 0px 2px #fff;
+    -moz-box-shadow:0px 0px 0px 2px #fff;
+    box-shadow:0px 0px 0px 2px #fff;
+}
+.touchy-search-button:hover .touchy-default-search-outer:after,
+.touchy-search-button:hover .touchy-default-search-outer .touchy-default-search-inner,
+.touchy-search-button:hover .touchy-default-search-outer .touchy-default-search-inner:before,
+.touchy-search-button:hover .touchy-default-search-outer .touchy-default-search-inner:after { background-color:#fff; }
+
+/* default menu icon hover */
+.touchy-menu-button:hover .touchy-default-menu,
+.touchy-menu-button:hover .touchy-default-menu:before,
+.touchy-menu-button:hover .touchy-default-menu:after { background-color:#fff; }
+
+/* default back button */
+.touchy-default-back,
+.touchy-default-back:before,
+.touchy-default-back:after { background-color:#000000; }
+
+/* default call button */
+.touchy-default-call-one,
+.touchy-default-call-two,
+.touchy-default-call-three,
+.touchy-default-call-one:before,
+.touchy-default-call-two:before,
+.touchy-default-call-three:before,
+.touchy-default-call-one:after,
+.touchy-default-call-two:after,
+.touchy-default-call-three:after { background-color:#ffffff; }
+
+/* default email button */
+.touchy-email-button .touchy-default-email-outer {
+    -webkit-box-shadow:0px 0px 0px 2px #ffffff;
+    -moz-box-shadow:0px 0px 0px 2px #ffffff;
+    box-shadow:0px 0px 0px 2px #ffffff;
+}
+.touchy-email-button .touchy-default-email-outer:before,
+.touchy-email-button .touchy-default-email-outer:after,
+.touchy-email-button .touchy-default-email-outer .touchy-default-email-inner:before,
+.touchy-email-button .touchy-default-email-outer .touchy-default-email-inner:after { background-color:#ffffff; }
+
+/* default search button */
+.touchy-search-button .touchy-default-search-outer {
+    -webkit-box-shadow:0px 0px 0px 2px ;
+    -moz-box-shadow:0px 0px 0px 2px ;
+    box-shadow:0px 0px 0px 2px ;
+}
+.touchy-search-button .touchy-default-search-outer:after,
+.touchy-search-button .touchy-default-search-outer .touchy-default-search-inner,
+.touchy-search-button .touchy-default-search-outer .touchy-default-search-inner:before,
+.touchy-search-button .touchy-default-search-outer .touchy-default-search-inner:after { background-color:; }
+
+/* menu bar dividers */
+
+/* menu bar dividers */
+.touchy-back-button:after,
+.touchy-call-button:after,
+.touchy-email-button:after,
+.touchy-search-button:after { background-color:; }
+
+/* hide button dividers on button hover (on non-touch devices only) */
+.touchy-back-button:hover:after,
+.touchy-call-button:hover:after,
+.touchy-email-button:hover:after,
+.touchy-search-button:hover:after { opacity:0; }
+
+/* search field placeholder color */
+input.touchy-search-field::-webkit-input-placeholder { color: !important; }
+input.touchy-search-field:-moz-placeholder { color: !important; }
+input.touchy-search-field::-moz-placeholder { color: !important; }
+/* search field text color */
+.touchy-search-wrapper input.touchy-search-field { color:; }
+/* search field 'clear field' button color */
+.touchy-clear-search::before,
+.touchy-clear-search::after { background-color: }
+/* search field background color */
+.touchy-search-wrapper input.touchy-search-field { background-color:; }
+/* search button text + background color */
+.touchy-search-wrapper input.touchy-search { color:; background-color:; }
+
+/* accordion + tooltip background, corner radius, menu end marker */
+.touchy-by-bonfire {
+    border-radius:px;
+    border-bottom-width:px;
+}
+.touchy-menu-tooltip:before { border-bottom-color:; }
+.touchy-by-bonfire { background:; border-color:; }
+/* if tooltip color overridden */
+.touchy-menu-tooltip:before { border-bottom-color:; }
+
+/* sub-menu background */
+.touchy-by-bonfire ul.sub-menu { background:; }
+
+/* horizontal menu item divider */
+.touchy-by-bonfire .menu > li,
+.touchy-by-bonfire ul.sub-menu > li:first-child { border-color:; }
+/* horizontal menu item divider (sub-menu) */
+.touchy-by-bonfire ul li ul li:after { background-color:; }
+
+/* accordion menu separator */
+.touchy-by-bonfire .menu li span { border-left-color:; }
+/* accordion menu separator (sub-menu) */
+.touchy-by-bonfire .sub-menu li span { border-left-color:; }
+
+/* submenu arrow animation */
+
+.touchy-by-bonfire span.touchy-submenu-active span::before {
+    -webkit-transform:rotate(-45deg);
+    -moz-transform:rotate(-45deg);
+    transform:rotate(-45deg);
+}
+.touchy-by-bonfire span.touchy-submenu-active span::after {
+    -webkit-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    transform:rotate(45deg);
+}
+/* accordion menu item */
+.touchy-by-bonfire .menu a {
+    font-size:px;
+    line-height:px;
+    font-family:;
+    color:;
+}
+.touchy-by-bonfire ul li.current-menu-item > a,
+.touchy-by-bonfire .sub-menu .current-menu-item > a { color:; }
+.touchy-by-bonfire .menu a:hover,
+.touchy-by-bonfire ul li.current-menu-item a:hover,
+.touchy-by-bonfire .menu a:active { color:; }
+
+/* menu icons */
+.touchy-by-bonfire .menu a i {
+    font-size:px;
+    color:;
+}
+.touchy-by-bonfire .sub-menu a i {
+    font-size:px;
+    color:;
+}
+
+/* menu description */
+.touchy-menu-item-description {
+    font-size:px;
+    line-height:px;
+    margin-top:px;
+    font-family:;
+    color:;
+}
+
+/* accordion sub-menu item */
+.touchy-by-bonfire .sub-menu a { color:; }
+.touchy-by-bonfire .sub-menu a:hover, .touchy-by-bonfire .sub-menu a:active { color:; }
+
+/* highlighted menu item */
+.touchy-by-bonfire ul li.marker > a { border-color:; }
+
+/* content overlay color + transparency */
+.touchy-overlay { background-color:; }
+.touchy-overlay-active { opacity:; }
+
+/* menu transparency */
+.touchy-wrapper { opacity:; }
+
+/* hide menubar shadow */
+
+/* widget area background */
+.touchy-widgets-wrapper { background-color:; }
+
+/* absolute positioning */
+
+/* bottom positioning */
+.touchy-logo-wrapper {
+    z-index:99992 !important;
+    -moz-box-shadow:0 0 2px 0 rgba(0,0,0,0.14);
+    -webkit-box-shadow:0 0 2px 0 rgba(0,0,0,0.14);
+    box-shadow:0 0 2px 0 rgba(0,0,0,0.14);
+}
+.touchy-wrapper {
+    position:fixed !important;
+    top:auto;
+    bottom:0;
+}
+.touchy-by-bonfire-wrapper {
+    position:fixed !important;
+    top:20px;
+    bottom:65px;
+}
+.touchy-search-wrapper {
+    position:fixed !important;
+    top:auto;
+    bottom:0;
+}
+.touchy-search-wrapper-active {
+    -webkit-transform:translateY(-51px);
+    -moz-transform:translateY(-51px);
+    transform:translateY(-51px);
+}
+.touchy-by-bonfire {
+    position:absolute;
+    top:auto;
+    bottom:0;
+    border-width:3px 0 0 0;
+}
+.touchy-menu-tooltip:before {
+    top:-15px;
+    border-bottom:0;
+    border-top:6px solid #fff;
+    border-top-color:;
+}
+.touchy-by-bonfire {
+    -webkit-transform:translateY(10px);
+    -moz-transform:translateY(10px);
+    transform:translateY(10px);
+}
+
+/* hide logo area background shadow */
+
+/* accordion expand icon */
+.touchy-by-bonfire .touchy-sub-arrow-inner:before,
+.touchy-by-bonfire .touchy-sub-arrow-inner:after { background-color:; }
+/* accordion expand icon (sub-menu) */
+.touchy-by-bonfire .sub-menu li .touchy-sub-arrow-inner:before,
+.touchy-by-bonfire .sub-menu li .touchy-sub-arrow-inner:after { background-color:; }
+
+/* show sub-menu arrow hover colors on non-touch devices only */
+.touchy-by-bonfire .touchy-sub-arrow:hover .touchy-sub-arrow-inner:before,
+.touchy-by-bonfire .touchy-sub-arrow:hover .touchy-sub-arrow-inner:after { background-color:#777; }
+/* accordion expand icon hover */
+.touchy-by-bonfire .touchy-sub-arrow:hover .touchy-sub-arrow-inner:before,
+.touchy-by-bonfire .touchy-sub-arrow:hover .touchy-sub-arrow-inner:after { background-color:; }
+/* accordion expand icon hover (sub-menu) */
+.touchy-by-bonfire .sub-menu li .touchy-sub-arrow:hover .touchy-sub-arrow-inner:before,
+.touchy-by-bonfire .sub-menu li .touchy-sub-arrow:hover .touchy-sub-arrow-inner:after { background-color:; }
+
+/* full menu item menu */
+.touchy-by-bonfire .menu .full-item-arrow-hover > .touchy-sub-arrow .touchy-sub-arrow-inner::before,
+.touchy-by-bonfire .menu .full-item-arrow-hover > .touchy-sub-arrow .touchy-sub-arrow-inner::after,
+.touchy-by-bonfire .menu > li > span.touchy-submenu-active .touchy-sub-arrow-inner::before,
+.touchy-by-bonfire .menu > li > span.touchy-submenu-active .touchy-sub-arrow-inner::after { background-color:; }
+/* full menu item sub-menu */
+.touchy-by-bonfire .sub-menu .full-item-arrow-hover > .touchy-sub-arrow .touchy-sub-arrow-inner::before,
+.touchy-by-bonfire .sub-menu .full-item-arrow-hover > .touchy-sub-arrow .touchy-sub-arrow-inner::after,
+.touchy-by-bonfire .sub-menu > li > span.touchy-submenu-active .touchy-sub-arrow-inner::before,
+.touchy-by-bonfire .sub-menu > li > span.touchy-submenu-active .touchy-sub-arrow-inner::after { background-color:; }
+
+/* if submenu arrow divider is hidden */
+
+/* push down Touchy if WordPress toolbar is active */
+
+/* hide touchy between resolutions */
+@media ( min-width:px) and (max-width:px) {
+    .touchy-logo-wrapper,
+    .touchy-search-wrapper,
+    .touchy-wrapper,
+    .touchy-overlay,
+    .touchy-by-bonfire { display:none !important; }
+}
+/* hide theme menu */
